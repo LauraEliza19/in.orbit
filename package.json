@@ -1,31 +1,40 @@
 {
-  "name": "in.orbit",
-  "version": "1.0.0",
-  "description": "App para controle de metas",
-  "main": "index.js",
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "tsx watch --env-file .env  src/http/server.ts",
-    "seed": "tsx --env-file .env src/db/seed.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
-    "@types/node": "^22.5.4",
-    "drizzle-kit": "^0.24.2",
-    "tsx": "^4.19.0",
-    "typescript": "^5.6.2"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@fastify/cors": "^9.0.1",
-    "@paralleldrive/cuid2": "^2.2.2",
-    "dayjs": "^1.11.13",
-    "drizzle-orm": "^0.33.0",
-    "fastify": "^4.28.1",
-    "fastify-type-provider-zod": "^2.0.0",
-    "postgres": "^3.4.4",
-    "postgresql": "^0.0.1",
-    "zod": "^3.23.8"
+    "@hookform/resolvers": "3.9.0",
+    "@radix-ui/react-dialog": "1.1.1",
+    "@radix-ui/react-progress": "1.1.0",
+    "@radix-ui/react-radio-group": "1.2.0",
+    "@tanstack/react-query": "5.51.23",
+    "dayjs": "1.11.12",
+    "lucide-react": "0.427.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "7.52.2",
+    "react-router-dom": "6.26.0",
+    "sonner": "1.5.0",
+    "tailwind-merge": "2.5.2",
+    "tailwind-variants": "0.2.1",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.41",
+    "tailwindcss": "3.4.9",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0"
   }
 }
